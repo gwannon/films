@@ -1,0 +1,312 @@
+body  {
+	font-family: 'Special Elite', cursive;
+	font-weight: 700;
+	font-size: 15px;
+	background-color: #000000;
+}
+
+body#indexphp {
+	margin-top: 36px;
+	/*margin-bottom: 64px;*/
+}
+
+body#editphp {
+	margin-bottom: 36px;
+}
+
+a { color: #ffffff; outline: none; } 
+
+/* --------------- FILTER ---------------- */
+#filters {
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	z-index: 10;
+}
+
+.filter {
+	padding: 0px !important;
+}
+
+.filter select {
+	margin: 0px;
+	color: #ffffff;
+	background-color: #000000;
+	border: none;	
+}
+
+/* --------------- FILM ------------------ */
+.film {
+	padding: 0px !important;
+	position: relative;
+	background-color: #000000;
+}
+
+.film.hidden {
+	display: none;
+}
+
+.film span {
+	position: absolute;
+	bottom: 8px;
+	right: 8px;
+	background-color: #000000;
+	border: 1px solid #ffffff;
+	font-size: 15px;
+	line-height: 100%;
+	padding: 7px 9px 1px 9px;
+	border-radius: 12px;
+	color: #ffffff;
+	transition: all 0.3s;
+	z-index: 10;
+	cursor: pointer;
+}
+
+.film span.active { background-color: #ffffff; color: #000000; }
+
+.film img { /*opacity: 0.5; */ }
+
+.film .box {
+	background-color: rgba(0, 0, 0, 0.7);
+	opacity: 0;
+	transition: opacity 0.3s;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	padding: 15px;
+	cursor: pointer;
+}
+
+.film .box.active { opacity: 1; }
+
+.film .box p {
+	color: #ffffff;
+	padding: 0px;
+	margin: 0px;
+	font-family: 'Special Elite', cursive;
+	font-weight: 700;
+	font-size: 20px;
+	line-height: 110%;
+}
+
+.film .box p.title { font-family: 'Bangers', cursive; margin-bottom: 10px; letter-spacing: 1px;}
+
+.film .box p.year {
+	font-weight: 400;
+	font-size: 15px;
+}
+.film .box p.saga {
+	font-weight: 400;
+	font-size: 15px;
+}
+
+.film .box p.author {
+	font-weight: 400;
+	font-size: 15px;
+}
+
+.film .box p.duration {
+	font-weight: 400;
+	font-size: 15px;
+}
+
+.film .box p.genre {
+	font-weight: 400;
+	font-size: 15px;
+}
+
+.film .box p.saga {
+	font-weight: 400;
+	font-size: 15px;
+}
+
+.film .box p.views {
+	font-weight: 400;
+	font-size: 15px;
+}
+
+/* ------------ MINIFILM ------------------ */
+.minifilm { padding: 0px !important; }
+
+.minifilm .box {
+	padding: 15px;
+}
+
+#filmphp .minifilm .box.noppadding {
+	padding: 0px 15px 15px;
+}
+
+.minifilm .box p {
+	color: #ffffff;
+	padding: 0px;
+	margin: 0px;
+	font-family: 'Special Elite', cursive;
+	font-weight: 700;
+	font-size: 22px;
+	line-height: 110%;
+}
+
+.minifilm .box p.title {
+	text-align: center; 
+	font-family: 'Bangers', cursive; 
+	margin-bottom: 0px; 
+	font-size: 37px;
+	letter-spacing: 1px;
+}
+
+.minifilm .box p.titleoriginal {
+	font-weight: 400;
+	font-size: 17px;
+}
+
+.minifilm .box p.year {
+	font-weight: 400;
+	font-size: 17px;
+}
+
+.minifilm .box p.saga {
+	font-weight: 400;
+	font-size: 17px;
+}
+
+.minifilm .box p.author{
+	font-weight: 400;
+	font-size: 17px;
+}
+
+.minifilm .box p.duration{
+	font-weight: 400;
+	font-size: 17px;
+}
+
+.minifilm .box p.genre {
+	font-weight: 400;
+	font-size: 17px;
+}
+
+.minifilm .box p.saga {
+	font-weight: 400;
+	font-size: 17px;
+}
+
+.minifilm .box p.notes {
+	color: #000000;
+	background-color: #ffffff;
+	padding: 10px;
+	font-weight: 400;
+	font-size: 17px;
+	margin-bottom: 20px;
+}
+
+.minifilm .box ul li {
+	color: #ffffff;
+	padding: 0px;
+	margin: 0px;
+	font-family: 'Special Elite', cursive;
+	line-height: 110%;
+	font-weight: 400;
+	font-size: 17px;
+}
+
+/* ----------- OTROS -------------- */
+.easy-autocomplete-container ul li { color: #000000 !important; padding: 10px !important; }
+
+.reveal { padding: 5px; }
+
+.close-button { color: #efefef; text-shadow:0px 0px 4px #000000; top: 18px; }
+
+.button {
+	padding: 10px;
+	font-family: 'Special Elite', cursive;
+	font-weight: 700;
+	color: #ffffff;
+	text-align: center;
+	font-size: 15px;
+	line-height: 110%;
+	border: 1px solid #ffffff;
+	background-color: #000000;
+	transition: all 0.3s;
+}
+
+a.back, a.edit {
+	position: fixed;
+	bottom: 0px;
+	width: 50%;
+	padding: 10px;
+	font-family: 'Special Elite', cursive;
+	font-weight: 700;
+	color: #ffffff;
+	text-align: center;
+	font-size: 15px;
+	line-height: 110%;
+	border: 1px solid #ffffff;
+	background-color: #000000;
+	transition: all 0.3s;
+}
+a.edit { left: 50%; }
+
+a.add {
+	position: fixed;
+	padding: 0px 10px 0px;
+	bottom: 10px;
+	right: 10px;
+	font-family: 'Special Elite', cursive;
+	font-weight: 700;
+	color: #ffffff;
+	text-align: center;
+	font-size: 26px;
+	line-height: 110%;
+	border: 1px solid #ffffff;
+	background-color: #000000;
+	transition: all 0.3s;
+	z-index: 15;
+	padding: 8px 13px 2px;
+}
+
+a.export {
+	position: fixed;
+	padding: 0px 10px 0px;
+	bottom: 10px;
+	right: 10px;
+	font-family: 'Special Elite', cursive;
+	font-weight: 700;
+	color: #ffffff;
+	text-align: center;
+	font-size: 35px;
+	line-height: 110%;
+	border: 1px solid #ffffff;
+	background-color: #000000;
+	transition: all 0.3s;
+	z-index: 15;
+}
+
+a.export { 
+	right: auto; 
+	left: 10px; 
+	font-size: 20px;
+	padding: 10px 9px 8px;
+	bottom: 9px;
+}
+
+a.add:hover, a.back:hover, a.edit:hover, a.export:hover, a.viewmore:hover, .button:hover, a.add:focus, a.back:focus, a.edit:focus, a.export:focus, .button:focus {
+	background-color: #ffffff;
+	color: #000000;
+}
+
+a.viewmore {
+	font-family: 'Special Elite', cursive;
+	font-weight: 700;
+	color: #ffffff;
+	text-align: center;
+	font-size: 15px;
+	line-height: 110%;
+	border: 1px solid #ffffff;
+	background-color: #000000;
+	padding: 12px;
+	margin: 35px auto 9px;
+	display: block;
+	max-width: 100px;
+}
